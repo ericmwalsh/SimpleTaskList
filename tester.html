@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel ="stylesheet" href="assets/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap-select.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+    <meta charset="utf-8" />
+    <title>Tester Page</title>
+</head>
+
+
+<form id="specialFormEdit" class="form-group">
+    <h1 align="center"><strong>Task Input Form</strong></h1>
+    <br>
+    <input type="text" id="taskname" class="form-control" placeholder="Task Name"/>
+    <br>
+    <br>
+    <textarea id="taskdetails" class="form-control" placeholder="Task Instructions and Details"></textarea>
+    <br>
+    <br>
+    <input type="text" id="originator" class="form-control" placeholder="Originator"/>
+    <br>
+    <br>
+    <select id="priority-select" class="form-control">
+        <option value = "1">Priority - As Soon As Possible</option>
+        <option value = "2">Priority - By the End of the Day</option>
+        <option value = "30">Priority - By the End of the Week</option>
+    </select>
+
+    <br>
+
+
+    <button type="button" id="submit-task-button" class="btn btn-danger btn-block" disabled><strong>Submit Task</strong></button>
+    <h4 id="checksuccess"><strong>Successful Submission!</strong></h4>
+
+
+
+</form>

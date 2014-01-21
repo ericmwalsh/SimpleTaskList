@@ -1,0 +1,29 @@
+createTask Tests
+
+//  http://localhost/task/createTask.php?taskName=testtask&taskDetails=testdetails&taskPriority=0&taskOriginator=testoriginator&taskWorkers=testworkers
+//  http://localhost/task/createTask.php?taskName=tt3&taskDetails=td3&taskPriority=0&taskOriginator=to5&taskWorkers[]=tw10&taskWorkers[]=tw11&taskWorkers[]=tw12
+echo $task_name . '<br>';
+echo $task_details . '<br>';
+echo $task_priority . '<br>';
+echo $originator_id . '<br>';
+var_dump($task_workers); echo '<br>';
+echo $task_ip . '<br>';
+
+
+
+taskTable Tests
+
+//TESTING PURPOSES
+for($j=0; $j<count($task_list); $j++)
+{
+    for($i=0; $i<6; $i++) //count($task_list[$j])
+    {
+        echo $task_list[$j][$i] . '<br>';
+    }
+    echo '<br><br><br><br>';
+}
+
+var_dump($task_list);
+
+
+// http://stackoverflow.com/questions/3075577/convert-mysql-datetime-stamp-into-javascripts-date-format
